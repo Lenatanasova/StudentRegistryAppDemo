@@ -9,7 +9,7 @@ pipeline{
         nodejs "${Node_VERSIONS}"
     }
 
-    stage{
+    stages{
         stage('Checkout'){
             steps{
                 git branch: 'main', url: 'https://github.com/Lenatanasova/StudentRegistryAppDemo'
